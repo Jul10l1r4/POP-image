@@ -1,18 +1,10 @@
-// Efeito scroll, rolagem da página, pega a barra na esquerda e muda ela para ficar fixa
-const Scroll = () => {// Arrow function `ES6`
-	if ( window.pageYOffset > 180 ) {// Se a página estiver descida 180pxeis ela faz o código abaixo
-		let top = document.querySelector( `.tutop` )
-		top.setAttribute( `style`, `animation-name:totop;animation-duration:0.5s` )
-		setTimeout(function(){					
-			top.setAttribute( `class`, `totop` )
-		}  , 500)
-	}else {
-		let top = document.querySelector( `.totop` )
-		top.setAttribute( `style`, `animation-name:tutop;animation-duration:0.5s` )
-		setTimeout(function(){		
-			top.setAttribute( `class`, `tutop` )
-		}  , 500)
-	}
+// Image galeria foda-see jquery
+const onClick = ( a, b ) => {// passando valores com poucos como letras.. menos dados a alocar
+	// Ele pegará o elemento a que será levada na função e colocará no src, do box ja existente
+	document.getElementById ( 'default' ).src = a
+	// Pegará nosso box e transformará em block, no caso visível
+	document.getElementById ( 'bloco' ).style.display = 'block'
+	// pegará o valor do texto levado como b, e transferir para o caption, o que causará aquela legenda
+	let captionText = document.getElementById( 'caption' )
+	captionText.innerHTML = b
 }
-// Ativa a nossa função
-window.addEventListener( `scroll`, Scroll );
