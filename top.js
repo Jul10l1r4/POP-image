@@ -17,3 +17,23 @@ if (navigator.userAgent.indexOf("Chrome") > -1){
 }// porque ele verifica se é o chrome? porque o Jquery é uma lib, que pesa bastante, e nao queremos que nossa aplicaçao
  // venha ser pesada, exceto se isso afetar em nosso designer ou plano, e para nao colocar o chrome foi feito
 }
+// ESTILIZAÇÃO
+// Efeito scroll, rolagem da página, pega a barra na esquerda e muda ela para ficar fixa
+const Scroll = () => {// Arrow function `ES6`
+	if ( window.pageYOffset > 180 ) {// Se a página estiver descida 180pxeis ela faz o código abaixo
+		let top = document.querySelector( `.tutop` )
+		top.setAttribute( `style`, `animation-name:totop;animation-duration:0.5s` )
+		setTimeout(function(){					
+			top.setAttribute( `class`, `totop` )
+		}  , 500)
+	}else {
+		let top = document.querySelector( `.totop` )
+		top.setAttribute( `style`, `animation-name:tutop;animation-duration:0.5s` )
+		setTimeout(function(){		
+			top.setAttribute( `class`, `tutop` )
+		}  , 500)
+	}
+}
+// Ativa a nossa função
+window.addEventListener( `scroll`, Scroll );
+
