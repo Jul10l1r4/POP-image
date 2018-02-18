@@ -1,10 +1,10 @@
 {
   "name": "pop-image",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Ele cria um suave box, para visualizar imagens de um modo mais, porreta e um pequeno botão para subir ao topo do site 🤘",
   "main": "Top.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Este script não é para ser rodado assim, ele deve ser importado em seus projetos\""
   },
   "repository": {
     "type": "git",
