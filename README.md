@@ -1,4 +1,4 @@
-# Direto ao ponto?
+# Direto ao ponto .
 
 Você pode instala-lo assim.
 ```bash
