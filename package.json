@@ -1,8 +1,8 @@
 {
-  "name": "pop-all",
+  "name": "pop-image",
   "version": "1.0.0",
   "description": "Ele cria um suave box, para visualizar imagens de um modo mais, porreta e um pequeno botão para subir ao topo do site 🤘",
-  "main": "Galeria.js",
+  "main": "Top.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,9 +12,10 @@
   },
   "keywords": [
     "pop",
+    "images",
     "imagens",
-    "box",
-    "to-top"
+    "totop",
+    "aotopo"
   ],
   "author": "Julio Lira",
   "license": "GPL-3.0",
