@@ -1,3 +1,9 @@
+# Direto ao ponto?
+
+Você pode instala-lo assim.
+```bash
+ npm install pop-image --save
+```
 # POP-image 🍺
  
  Tenha fluidez ao abrir uma imagem, vejo por aí muitos sites, onde apertam na imagem e sim a imagem abre grande, mas abre uma nova
