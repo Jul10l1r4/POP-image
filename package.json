@@ -1,0 +1,25 @@
+{
+  "name": "pop-all",
+  "version": "1.0.0",
+  "description": "Ele cria um suave box, para visualizar imagens de um modo mais, porreta e um pequeno botão para subir ao topo do site 🤘",
+  "main": "Galeria.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jul10l1r4/POP-image.git"
+  },
+  "keywords": [
+    "pop",
+    "imagens",
+    "box",
+    "to-top"
+  ],
+  "author": "Julio Lira",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Jul10l1r4/POP-image/issues"
+  },
+  "homepage": "https://github.com/Jul10l1r4/POP-image#readme"
+}
