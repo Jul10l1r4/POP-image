@@ -7,3 +7,13 @@ const go = (elemento) => {// Arrow function levando um parâmetro que será um s
 	  behavior: 'smooth' // Unico efeito, dá a instrução ao browser que ele movaaaa uhuuull caraaai
   });// terminouuu fiii, só isso, c n vai precisar exporrtar mais 5000mil instruçoes de dados da porra do jquery
 } // Só seeeeu,_fiiii
+// [...document.querySelectorAll('a')]
+// 	.map(x => {
+// 			 if(x.dataset.anim){
+// 				 let lugar = x.href 
+// 				 x.addEventListener( "click", go(lugar))
+// 				}else{
+// 					return false
+// 				}
+// 			}
+// 	)
