@@ -3,6 +3,7 @@
 -> Página: jul10l1r4.github.io
 */
 // Image galeria foda-see jquery
+let animacao = require("./scroll-page.js") // Exportando a animação
 const vai = ( a, b ) => {// passando valores com poucos como letras.. menos dados a alocar
 	// Ele pegará o elemento a que será levada na função e colocará no src, do box ja existente
 	document.getElementById ( 'default' ).src = a
@@ -14,20 +15,20 @@ const vai = ( a, b ) => {// passando valores com poucos como letras.. menos dado
 	captionText.innerHTML = b
 }
 // Função que será invocada
-const up = () => {
-// Verificaremos o browser, como temos um css onde faz o scroll funcionar em todos os browsers, exceto ao google chrome
-if (navigator.userAgent.indexOf("Chrome") > -1){
-	window.scroll({// Passe do malandro u.u
-	  top: 0, 
-	  left: 0, 
-	  behavior: 'smooth' 
-	});
-	
-}else{
-	console.log(`Link desparado`)	
-}// porque ele verifica se é o chrome? porque o Jquery é uma lib, que pesa bastante, e nao queremos que nossa aplicaçao
- // venha ser pesada, exceto se isso afetar em nosso designer ou plano, e para nao colocar o chrome foi feito
-}
+// const up = () => {
+// // Verificaremos o browser, como temos um css onde faz o scroll funcionar em todos os browsers, exceto ao google chrome
+// if (navigator.userAgent.indexOf("Chrome") > -1){
+// 	window.scroll({// Passe do malandro u.u
+// 	  top: 0, 
+// 	  left: 0, 
+// 	  behavior: 'smooth' 
+// 	});
+
+// }else{
+// 	console.log(`Link desparado`)	
+// }// porque ele verifica se é o chrome? porque o Jquery é uma lib, que pesa bastante, e nao queremos que nossa aplicaçao
+//  // venha ser pesada, exceto se isso afetar em nosso designer ou plano, e para nao colocar o chrome foi feito
+// }
 // ESTILIZAÇÃO
 // Efeito scroll, rolagem da página, pega a barra na esquerda e muda ela para ficar fixa
 const Scroll = () => {// Arrow function `ES6`
