@@ -1,6 +1,6 @@
 {
   "name": "pop-image",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Ele cria um suave box, para visualizar imagens de um modo mais, porreta e um pequeno botão para subir ao topo do site 🤘",
   "main": "Top.js",
   "scripts": {

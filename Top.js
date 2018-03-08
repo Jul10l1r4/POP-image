@@ -1,9 +1,8 @@
 /* Licença GNU GPLv3
 -> Criado por: @jul10l1r4
--> Página: jul10l1r4.github.io
+-> Página: jul10l1r4.github.io/
 */
 // Image galeria foda-see jquery
-let animacao = require("./scroll-page.js") // Exportando a animação
 const vai = ( a, b ) => {// passando valores com poucos como letras.. menos dados a alocar
 	// Ele pegará o elemento a que será levada na função e colocará no src, do box ja existente
 	document.getElementById ( 'default' ).src = a
@@ -14,22 +13,19 @@ const vai = ( a, b ) => {// passando valores com poucos como letras.. menos dado
 	// Isto far com que dentro de nossa variável ele insira a descrição como eu já tinha dito
 	captionText.innerHTML = b
 }
-// Função que será invocada
-// const up = () => {
-// // Verificaremos o browser, como temos um css onde faz o scroll funcionar em todos os browsers, exceto ao google chrome
-// if (navigator.userAgent.indexOf("Chrome") > -1){
-// 	window.scroll({// Passe do malandro u.u
-// 	  top: 0, 
-// 	  left: 0, 
-// 	  behavior: 'smooth' 
-// 	});
 
-// }else{
-// 	console.log(`Link desparado`)	
-// }// porque ele verifica se é o chrome? porque o Jquery é uma lib, que pesa bastante, e nao queremos que nossa aplicaçao
-//  // venha ser pesada, exceto se isso afetar em nosso designer ou plano, e para nao colocar o chrome foi feito
-// }
-// ESTILIZAÇÃO
+// Scroll, ao topo ^^
+// Puta que pariu! esse código só isso vai rodarrr coisas que precisaria de toda uma LIBBBB
+const go = (elemento) => {// Arrow function levando um parâmetro que será um seletor como o de css
+  let vivo = document.querySelector(elemento)// Pegará esse seletor e retornará um elemento vivo
+  window.scroll({ // Função nativa dos browsers
+	  top: vivo.getBoundingClientRect().top, // Captura a quantidade precisa de px do elemento em cada tela diferente fiii
+	  left: 0,// Obrigatório, nao queremos movimentos horizontais
+	  behavior: 'smooth' // Unico efeito, dá a instrução ao browser que ele movaaaa uhuuull caraaai
+  });// terminouuu fiii, só isso, c n vai precisar exporrtar mais 5000mil instruçoes de dados da porra do jquery
+} 
+
+// ESTILIZAÇÃO do BOTÃO de subir
 // Efeito scroll, rolagem da página, pega a barra na esquerda e muda ela para ficar fixa
 const Scroll = () => {// Arrow function `ES6`
 	if ( window.pageYOffset > 180 ) {// Se a página estiver descida 180pxeis ela faz o código abaixo
