@@ -7,8 +7,7 @@ Você pode instala-lo assim.
 ```
 # POP-image 🍺
  
- Tenha fluidez ao abrir uma imagem, vejo por aí muitos sites, onde apertam na imagem e sim a imagem abre grande, mas abre uma nova
- aba e realmente acho um pé no saco, porque tenho sempre que for abrir a pertar no botão de voltar do navegador e voltar a página onde eu estava, mas este box faz apenas com JS puro um box que abre a imagem suspensa na mesma página, a estilização fica por sua conta, mas se for preguiçoso já temos códigos montados, é só integrar.
+Tenha fluidez ao abrir uma imagem, vejo por aí muitos sites, onde apertam na imagem e sim a imagem abre grande, mas abre uma nova aba e realmente acho um pé no saco, porque tenho sempre que for abrir apertar no botão de voltar do navegador e voltar a página onde eu estava, mas este box faz apenas com JS puro um box que abre a imagem suspensa na mesma página(light box), a estilização fica por sua conta, mas se for preguiçoso já temos códigos montados, é só integrar, se quiser ver e criar uma sua, faça você mesmo.
  
 ## Veja o nosso manual 📒
 
@@ -16,8 +15,10 @@ Temos um respositório no [NotABug.org](notabug.org) onde falará sobre como int
 
 # Ele criará um botão de voltar ao topo 🔝
 
-Usando este suporte onde se baseia em animação com `CSS3` tem suporte em todos os navegadores exceto no Google Chrome, então fizemos um verificador, onde quando detecta o browser como o Google Chrome ele importa o Jquery, e cria a animação de deslize até o topo.
+Usando este suporte onde se baseia em animação com `JS` tem suporte em todos os navegadores, e cria a animação de deslize até o topo.
 
 ## Use o efeito scroll, sem carregar trilhões de códigos 🔥
 
-O efeito de deslizamento é algo almejado por muitos e também bastante usado, tráz aquela sensação de qualidade e de minimalismo, porém, nem sempre passa de sensação, muitas vezes os códigos são eternamente monstrons, são bibliotecas de mais 3000 linhas de códigos que importam muitas coisas, leia um artigo sobre isso em [@rootthings](https://rootthings.org/artigos/css3-paralax/) que explica a facilidade de usar esta ferramenta **NATIVA** do CSS 😏, e para o Google Chrome, fizemos ajustes que é realmente necessário carregar esses códigos, então para carregar apenas no Chrome fizemos este script.
+
+
+O efeito é feito com usando JS, poupando o máximo de processamentos necessários do lado do cliente, então fizemos algo sem a utilização de biblioteca, mas de uma forma eficiente, veja como você mesmo pode criar um botão assim com a função [scroll em seis linhas](https://jul10l1r4.github.io/artigos/Seja_performatico_-_efeito_scroll_com_6_linhas_sem_jquery/), usando esses códigos do artigo é que montamos uma estrutura leve e performática para facilitar a utilização. 
