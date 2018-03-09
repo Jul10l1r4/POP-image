@@ -11,7 +11,7 @@ Tenha fluidez ao abrir uma imagem, vejo por aí muitos sites, onde apertam na im
  
 ## Veja o nosso manual 📒
 
-Temos um respositório no [NotABug.org](notabug.org) onde falará sobre como integrar em sua aplicação, de uma forma que se der uma atualização não venha danificar sua aplicação.
+Temos um respositório no [NotABug.org](https://notabug.org/Jul10l1r4/Guia-POP) onde falará sobre como integrar em sua aplicação, de uma forma que se der uma atualização não venha danificar sua aplicação.
 
 # Ele criará um botão de voltar ao topo 🔝
 
