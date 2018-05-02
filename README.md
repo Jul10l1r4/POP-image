@@ -5,6 +5,11 @@ Você pode instala-lo assim.
 ```bash
  npm install pop-image --save
 ```
+Ou acrescente a âncora (caso não queira copiar manualmente): 
+```html
+ <script src="https://jul10l1r4.github.io/Ecmascript/:metal:.js"></script>
+```
+
 # POP-image 🍺
  
 Tenha fluidez ao abrir uma imagem, vejo por aí muitos sites, onde apertam na imagem e sim a imagem abre grande, mas abre uma nova aba e realmente acho um pé no saco, porque tenho sempre que for abrir apertar no botão de voltar do navegador e voltar a página onde eu estava, mas este box faz apenas com JS puro um box que abre a imagem suspensa na mesma página(light box), a estilização fica por sua conta, mas se for preguiçoso já temos códigos montados, é só integrar, se quiser ver e criar uma sua, faça você mesmo.
