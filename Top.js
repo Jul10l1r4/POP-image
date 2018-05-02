@@ -8,11 +8,23 @@ const vai = ( a, b ) => {// passando valores com poucos como letras.. menos dado
 	document.getElementById ( 'default' ).src = a
 	// Pegará nosso box e transformará em block, no caso visível
 	document.getElementById ( 'bloco' ).style.display = 'block'
+	//faz o bloco ser fixo
+	document.getElementById ( 'bloco' ).style.position = 'fixed'
 	// pegará o valor do texto levado como b, e transferir para o caption, o que causará aquela legenda
 	let captionText = document.getElementById( 'caption' )
 	// Isto far com que dentro de nossa variável ele insira a descrição como eu já tinha dito
 	captionText.innerHTML = b
+	// Mudará o body para fechar o bagui quando scroolar
+	document.querySelector( 'body' ).setAttribute( 'onscroll', 'normaliz( `#bloco` )' )
 }
+// Função que fechará  box
+const normaliz = (x) => {
+	// retira o box geral
+	document.querySelector(x).style.position = 'none'
+	// retira o script do body
+	document.querySelector(x).onscroll = ""
+}
+
 
 // Scroll, ao topo ^^
 // Puta que pariu! esse código só isso vai rodarrr coisas que precisaria de toda uma LIBBBB
@@ -44,4 +56,3 @@ const Scroll = () => {// Arrow function `ES6`
 }
 // Ativa a nossa função
 window.addEventListener( `scroll`, Scroll );
-
